@@ -241,14 +241,15 @@ body {
     display: flex;
     /* border: 5px solid black; */
     max-width: 800px;
-    height: 475px;
+    height: 575px;
     border-radius: 40px;
     align-items: center;
 }
+
 .lbox {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     width: 400px;
-    height: 475px;
+    height: 525px;
     border-radius: 40px;
     align-items: center;
 }
@@ -256,17 +257,61 @@ body {
 .rbox {
     /* border: 5px solid red; */
     width: 400px;
-    height: 475px;
+    height: 525px;
     border-radius: 40px;
     align-items: center;
-    position: relative; left: -75px;
+    position: relative;
+    left: -75px;
 }
 
-h1,h2,div{
+h1,
+h2,
+div {
     text-align: center;
 }
 
-#yr{
+.circle {
+    width: 215px;
+    height: 215px;
+    position: relative;
+    top: -40px;
+    right: -95px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%
+}
+
+#circlescore{
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    top: 35px;
+    font-size: 75px;
+    font-weight: 800;
+}
+
+#circletext{
+    color: hsl(241, 100%, 89%);
+    position: relative;
+    top: -35px;
+    font-weight: 700;
+}
+
+#yr {
+    color: hsl(241, 100%, 89%);
+}
+
+#great{
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    top: -35px;
+    font-weight: 400;
+}
+
+#lboxp{
+    height: 80px;
+    max-width: 200px;
+    position: relative;
+    top: -35px;
+    right: -100px;
     color: hsl(241, 100%, 89%);
 }
 
