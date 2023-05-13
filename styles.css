@@ -379,14 +379,39 @@ div {
     background-color: hsl(234, 85%, 45%,0.075);
 }
 
-button{
-    color: hsl(241, 100%, 99%);
-    background-color: hsl(224, 30%, 27%);
+.btn-hover{
     border-radius: 40px;
     font-weight: bold;
     position:relative; right:-30px;
     margin: 20px;
     padding: 15px 100px 15px 100px;
+    cursor: pointer;
+
+    color: #fff;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color {
+    background-image: linear-gradient(to right, hsl(224, 30%, 27%), #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
 }
 
 .LC{
