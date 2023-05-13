@@ -324,55 +324,59 @@ div {
 }
 
 #Reaction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 10px;
     font-weight: 700;
     position:relative; right:-80px;
-    max-width: 200px;
+    max-width: 240px;
     margin: 20px;
-    padding: 20px 30px 20px 50px;
+    padding: 20px 30px 20px 10px;
     color: hsl(0, 100%, 67%);
     background-color: hsl(0, 100%, 67%,0.075);
 }
 
 #Memory{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 10px;
     font-weight: bold;
     position:relative; right:-80px;
-    max-width: 200px;
+    max-width: 240px;
     margin: 20px;
-    padding: 20px 30px 20px 50px;
+    padding: 20px 30px 20px 10px;
     color: hsl(39, 100%, 56%);
     background-color: hsl(39, 100%, 56%,0.075);
 }
 
 #Verbal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 10px;
     font-weight: bold;
     position:relative; right:-80px;
-    max-width: 200px;
+    max-width: 240px;
     margin: 20px;
-    padding: 20px 30px 20px 50px;
+    padding: 20px 30px 20px 10px;
     color: hsl(166, 100%, 37%);
     background-color: hsl(166, 100%, 37%,0.075);
 }
 
 #Visual{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 10px;
     font-weight: bold;
     position:relative; right:-80px;
-    max-width: 200px;
+    max-width: 240px;
     margin: 20px;
-    padding: 20px 30px 20px 50px;
+    padding: 20px 30px 20px 10px;
     color: hsl(234, 85%, 45%);
     background-color: hsl(234, 85%, 45%,0.075);
-}
-
-.alignl{
-    float: left;
-}
-
-.alignr{
-    float: right;
 }
 
 button{
@@ -383,4 +387,15 @@ button{
     position:relative; right:-30px;
     margin: 20px;
     padding: 15px 100px 15px 100px;
+}
+
+.LC{
+    min-width: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    padding-right: 7px;
 }
