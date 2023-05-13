@@ -230,11 +230,11 @@ html {
 body {
     font-family: 'Hanken Grotesk', sans-serif;
     font-size: 18px;
-    min-height: 90vh;
+    min-height: 105vh;
     min-width: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; 
+    justify-content: center; 
 }
 
 .box {
@@ -243,7 +243,7 @@ body {
     max-width: 800px;
     height: 575px;
     border-radius: 40px;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .lbox {
@@ -256,18 +256,20 @@ body {
 
 .rbox {
     /* border: 5px solid red; */
-    width: 400px;
+    width: 450px;
     height: 525px;
     border-radius: 40px;
     align-items: center;
     position: relative;
     left: -75px;
+    box-shadow: 1em 1em 1em rgba(0,0,0,0.1);;
 }
 
 h1,
 h2,
 div {
     text-align: center;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .circle {
@@ -275,7 +277,7 @@ div {
     height: 215px;
     position: relative;
     top: -40px;
-    right: -95px;
+    right: -80px;
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 50%
 }
@@ -315,6 +317,70 @@ div {
     color: hsl(241, 100%, 89%);
 }
 
-/* #sum{
-    position:relative; left:-80px;
-} */
+#sum{
+    position:relative; left:-50px;
+    font-weight: 700;
+    color: hsl(224, 30%, 27%);
+}
+
+#Reaction{
+    border-radius: 10px;
+    font-weight: 700;
+    position:relative; right:-80px;
+    max-width: 200px;
+    margin: 20px;
+    padding: 20px 30px 20px 50px;
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 100%, 67%,0.075);
+}
+
+#Memory{
+    border-radius: 10px;
+    font-weight: bold;
+    position:relative; right:-80px;
+    max-width: 200px;
+    margin: 20px;
+    padding: 20px 30px 20px 50px;
+    color: hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 56%,0.075);
+}
+
+#Verbal{
+    border-radius: 10px;
+    font-weight: bold;
+    position:relative; right:-80px;
+    max-width: 200px;
+    margin: 20px;
+    padding: 20px 30px 20px 50px;
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 37%,0.075);
+}
+
+#Visual{
+    border-radius: 10px;
+    font-weight: bold;
+    position:relative; right:-80px;
+    max-width: 200px;
+    margin: 20px;
+    padding: 20px 30px 20px 50px;
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%,0.075);
+}
+
+.alignl{
+    float: left;
+}
+
+.alignr{
+    float: right;
+}
+
+button{
+    color: hsl(241, 100%, 99%);
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 40px;
+    font-weight: bold;
+    position:relative; right:-30px;
+    margin: 20px;
+    padding: 15px 100px 15px 100px;
+}
