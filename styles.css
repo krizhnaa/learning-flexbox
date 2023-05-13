@@ -433,7 +433,7 @@ img {
     padding-right: 7px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
     body {
         min-height: 63vh;
         min-width: 60vh;
@@ -444,6 +444,10 @@ img {
         flex-direction: column;
         max-width: 1000px;
         height: 1045px;
+    }
+
+    .lbox{
+        border-radius: 0px 0px 40px 40px;
     }
 
     .rbox {
