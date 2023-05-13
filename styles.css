@@ -233,15 +233,16 @@ body {
     min-height: 105vh;
     min-width: 100vh;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
 }
 
 .box {
     display: flex;
     /* border: 5px solid black; */
     max-width: 800px;
-    height: 575px;
+    /* height: 575px; */
+    max-height: 2000px;
     border-radius: 40px;
     /* align-items: center; */
 }
@@ -262,7 +263,8 @@ body {
     align-items: center;
     position: relative;
     left: -75px;
-    box-shadow: 1em 1em 1em rgba(0,0,0,0.1);;
+    box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.1);
+    ;
 }
 
 h1,
@@ -282,7 +284,7 @@ div {
     border-radius: 50%
 }
 
-#circlescore{
+#circlescore {
     color: hsl(0, 0%, 100%);
     position: relative;
     top: 35px;
@@ -290,7 +292,7 @@ div {
     font-weight: 800;
 }
 
-#circletext{
+#circletext {
     color: hsl(241, 100%, 89%);
     position: relative;
     top: -35px;
@@ -301,14 +303,14 @@ div {
     color: hsl(241, 100%, 89%);
 }
 
-#great{
+#great {
     color: hsl(0, 0%, 100%);
     position: relative;
     top: -35px;
     font-weight: 400;
 }
 
-#lboxp{
+#lboxp {
     height: 80px;
     max-width: 200px;
     position: relative;
@@ -317,78 +319,84 @@ div {
     color: hsl(241, 100%, 89%);
 }
 
-#sum{
-    position:relative; left:-50px;
+#sum {
+    position: relative;
+    left: -50px;
     font-weight: 700;
     color: hsl(224, 30%, 27%);
 }
 
-#Reaction{
+#Reaction {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
     font-weight: 700;
-    position:relative; right:-80px;
+    position: relative;
+    right: -80px;
     max-width: 240px;
     margin: 20px;
     padding: 20px 30px 20px 10px;
     color: hsl(0, 100%, 67%);
-    background-color: hsl(0, 100%, 67%,0.075);
+    background-color: hsl(0, 100%, 67%, 0.075);
 }
 
-#Memory{
+#Memory {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
     font-weight: bold;
-    position:relative; right:-80px;
+    position: relative;
+    right: -80px;
     max-width: 240px;
     margin: 20px;
     padding: 20px 30px 20px 10px;
     color: hsl(39, 100%, 56%);
-    background-color: hsl(39, 100%, 56%,0.075);
+    background-color: hsl(39, 100%, 56%, 0.075);
 }
 
-#Verbal{
+#Verbal {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
     font-weight: bold;
-    position:relative; right:-80px;
+    position: relative;
+    right: -80px;
     max-width: 240px;
     margin: 20px;
     padding: 20px 30px 20px 10px;
     color: hsl(166, 100%, 37%);
-    background-color: hsl(166, 100%, 37%,0.075);
+    background-color: hsl(166, 100%, 37%, 0.075);
 }
 
-#Visual{
+#Visual {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
     font-weight: bold;
-    position:relative; right:-80px;
+    position: relative;
+    right: -80px;
     max-width: 240px;
     margin: 20px;
     padding: 20px 30px 20px 10px;
     color: hsl(234, 85%, 45%);
-    background-color: hsl(234, 85%, 45%,0.075);
+    background-color: hsl(234, 85%, 45%, 0.075);
 }
 
-.btn-hover{
+.btn-hover {
     border-radius: 40px;
     font-weight: bold;
-    position:relative; right:-30px;
+    position: relative;
+    right: -30px;
     margin: 20px;
     padding: 15px 100px 15px 100px;
     cursor: pointer;
 
     color: #fff;
-    text-align:center;
+    text-align: center;
     border: none;
     background-size: 300% 100%;
     moz-transition: all .4s ease-in-out;
@@ -414,13 +422,54 @@ div {
     box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
 }
 
-.LC{
+.LC {
     min-width: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-img{
+img {
     padding-right: 7px;
+}
+
+@media (max-width: 375px) {
+    body {
+        min-height: 63vh;
+        min-width: 60vh;
+        padding: 0px;
+    }
+
+    .box {
+        flex-direction: column;
+        max-width: 1000px;
+        height: 1045px;
+    }
+
+    .rbox {
+        width: 400px;
+        height: 525px;
+        border-radius: 40px;
+        align-items: center;
+        position: relative;
+        left: 0px;
+        top: -75px;
+        box-shadow: 1em 5em 5em rgba(0, 0, 0, 0.1);
+        padding: 75px 0px 0px 0px;
+        ;
+    }
+
+    #sum {
+        position: relative;
+        left: -100px;
+    }
+
+    #Reaction, #Memory, #Verbal, #Visual {
+        position: relative;
+        right: -30px;
+    }
+    .btn-hover.color {
+        position: relative;
+        left: -7px;
+    }
 }
